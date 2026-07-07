@@ -1,54 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Student Marks Table</title>
+    <title>Registration Form</title>
 </head>
 <body>
 
-    <h1>Student Marks Table</h1>
+    <h1>Student Registration Form</h1>
 
-    <table border="1" cellpadding="8" cellspacing="0">
-        <tr>
-            <th>Roll No</th>
-            <th>Student Name</th>
-            <th>English</th>
-            <th>Maths</th>
-            <th>Science</th>
-            <th>Total</th>
-            <th>Grade</th>
-        </tr>
+    <form>
 
-        <tr>
-            <td>101</td>
-            <td>Akshay</td>
-            <td>85</td>
-            <td>90</td>
-            <td>88</td>
-            <td>263</td>
-            <td>A</td>
-        </tr>
+        <label>Full Name:</label><br>
+        <input type="text" placeholder="Enter your name"><br><br>
 
-        <tr>
-            <td>102</td>
-            <td>Rahul</td>
-            <td>78</td>
-            <td>82</td>
-            <td>80</td>
-            <td>240</td>
-            <td>B</td>
-        </tr>
+        <label>Email:</label><br>
+        <input type="email" placeholder="Enter your email"><br><br>
 
-        <tr>
-            <td>103</td>
-            <td>Priya</td>
-            <td>92</td>
-            <td>95</td>
-            <td>91</td>
-            <td>278</td>
-            <td>A+</td>
-        </tr>
+        <label>Password:</label><br>
+        <input type="password" placeholder="Enter password"><br><br>
 
-    </table>
+        <label>Gender:</label><br>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <br><br>
+
+        <label>Course:</label><br>
+        <select>
+            <option>BCA</option>
+            <option>B.Sc</option>
+            <option>B.Tech</option>
+            <option>MCA</option>
+        </select>
+        <br><br>
+
+        <label>Hobbies:</label><br>
+        <input type="checkbox"> Reading
+        <input type="checkbox"> Sports
+        <input type="checkbox"> Music
+        <br><br>
+
+        <label>Address:</label><br>
+        <textarea rows="4" cols="30"></textarea>
+        <br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+
+    </form>
 
 </body>
 </html>
